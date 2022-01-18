@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+:root {
+    --color-red: #ec1840;
+    --color-purple: #7a18ec;
+    --color-white: #fff;
+    --color-black-1: #111;
+    --color-black-2: #222;
+    --color-black-3: #444;
+    --speed-normal: 0.5s;
+    --speed-fast: 0.8s;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* .hero-section{
+    width: 100vw;
+    height: 100vh;
+} */
+body{
+    background-color: #888;
+    /* opacity: .6; */
+}
+
+
+.navbar{
+    background-color: #888 !important;
+}
+.bg-1{
+    background-color: #888 !important;
+}
+
+
+.navbar-brand{
+    font-size: 1.9rem !important;
+    color: #565387 !important;
+}
+
+
+.navbar a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.menu-active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+
+
+.navbar a:hover{
+    color: #3498db !important;
+}
+
+/* responsive */
+
+@media (max-width:991px){
+    #header{
+        height: 80vh;
+        text-align: center;
+    }
+
+    #header{
+        text-align: center;
+    }
+
+    #header .header-img img{
+        width: 60%;
+    }
+}
+
+@media (max-width:768px) {
+    #header{
+        margin-top: 20px;
+    }
+    #header h1{
+        font-size: 28px;
+    }
+    #header h2{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    #header .header-img img{
+        width: 70%;
+    }
+}
+
+/* Header */
+#header{
+    width: 100%;
+    height: 80vh;
+    margin-top: 700;
+    color: black;
+}
+
+#header h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+
+#header .brand-name{
+    color:#3498db
+}
+
+.btn-get-started{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: .5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+
+.btn-get-started:hover{
+    background-color: #3498db;
+    color: #fff;
+}
+
+.header-img{
+    text-align: right;
+}
+.header-img img{
+    border-radius: 50%;
+}
+
+
+#header .animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+@keyframes up-down {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+/* Service (Card) */
+
+.card{
+    background-color: #999999;
+}
+.card img{
+    max-height: 350px !important;
+}
